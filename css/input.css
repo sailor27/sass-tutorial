@@ -1,0 +1,25 @@
+/*media queries*/
+body {
+  background-color: burlywood; }
+
+img {
+  max-width: 300px; }
+
+.first-class, .second-class {
+  background-color: aquamarine;
+  float: left;
+  width: 90vw;
+  display: inline; }
+
+.second-class {
+  border: 5px dashed #000;
+  height: 30vh;
+  width: 20vw; }
+
+.gallery li {
+  list-style: none;
+  float: left;
+  display: inline;
+  width: 60vw; }
+
+/*# sourceMappingURL=input.css.map */
