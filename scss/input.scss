@@ -1,33 +1,46 @@
 $neutral-color: burlywood;
+$primary-color: mediumvioletred;
+$border:1px dashed #000;
+$container: 1440px;
+$padding: 25px;
 /*media queries*/
 $tablet: "(min-width: 768px) and (max-width: 1023px)";
 $desktop: "(min-width: 1024px)";
-
+@function half-height($first, $second){
+  @return $container / $first + $padding / $second;
+}
 body{
   background-color: $neutral-color;
 }
 img{
   max-width:300px;
-
 }
-
 .first-class{
   background-color:aquamarine;
   float:left;
   width: 90vw;
   display: inline;
+  border: $border;
 }
-
 .second-class{
   @extend .first-class;
-  border: 5px dashed #000;
-  height: 30vh;
-  width: 20vw;
+  border: $border;
 }
-
+.container {
+  border: $border;
+  width: 100%;
+}
 .gallery li{
   list-style: none;
   float:left;
-  display: inline;
+  display: inline-block;
   width: 60vw;
+  border: $border;
+}
+a {font-family: sans-serif; color:$primary-color;
+  &:hover,
+  &:focus,
+  &:active {
+    color:red;
+  }
 }

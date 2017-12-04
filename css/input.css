@@ -9,17 +9,27 @@ img {
   background-color: aquamarine;
   float: left;
   width: 90vw;
-  display: inline; }
+  display: inline;
+  border: 1px dashed #000; }
 
 .second-class {
-  border: 5px dashed #000;
-  height: 30vh;
-  width: 20vw; }
+  border: 1px dashed #000; }
+
+.container {
+  border: 1px dashed #000;
+  width: 100%; }
 
 .gallery li {
   list-style: none;
   float: left;
-  display: inline;
-  width: 60vw; }
+  display: inline-block;
+  width: 60vw;
+  border: 1px dashed #000; }
+
+a {
+  font-family: sans-serif;
+  color: mediumvioletred; }
+  a:hover, a:focus, a:active {
+    color: red; }
 
 /*# sourceMappingURL=input.css.map */
